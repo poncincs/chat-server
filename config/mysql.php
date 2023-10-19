@@ -5,7 +5,7 @@ const MYSQL_HOST = 'localhost';
 const MYSQL_PORT = 3306;
 const MYSQL_NAME = 'chat-server';
 const MYSQL_USER = 'user';
-const MYSQL_PASSWORD = 'toto';
+const MYSQL_PASSWORD = 'l*80uR3gMjd*H.9g';
 
 try {
     $dbChatServer = new PDO(
