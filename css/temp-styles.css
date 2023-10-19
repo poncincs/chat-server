@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #555;
+  background: #eee;
+}
+
+main {
+  border-radius: 10px;
+  min-width: 320px;
+  max-width: 800px;
+  padding: 15px 30px auto;
+  margin: 0 auto 0;
+  background: #fff;
+}
+
+section {
+  display: none;
+  border-top: 1px solid #ddd;
+}
+
+input[id="tab1"],
+input[id="tab2"] {
+  display: none;
+}
+
+label[for*="1"],
+label[for*="2"] {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+  width: 49.7%;
+}
+
+label {
+  margin-left: 100px;
+}
+
+p {
+  margin: 5;
+  margin-left: 100px;
+}
+
+label::before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*="1"]:hover,
+label[for*="2"]:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input[name="tabs"]:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+input[id="tab1"]:checked + label {
+  border-left: 0 solid #ddd;
+}
+
+input[id="tab2"]:checked + label {
+  border-right: 0 solid #ddd;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  font-size: 14px;
+  width: 75%;
+  padding: 9px;
+  padding-left: 14px;
+  border: 1px solid #ccc;
+  display: block;
+  border-radius: 20px;
+  margin: 2px auto;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d; /* Green */
+  border: 2px solid #04aa6d;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #04aa6d;
+}
+
+input[type="checkbox"] {
+  margin-left: 100px;
+}
+
+input[type="checkbox"] + label {
+  margin-left: 10px;
+}
+
+input[name="gender"] + label {
+  margin-left: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+.flex-left {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+.flex-middle {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+.flex-right {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+  display: block;
+}
+
+.container {
+  padding: 5px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.submit {
+  margin: 20px 50px 15px;
+}
+
+.forgot-psw {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center {
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 16px;
+  }
+
+  label::before {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
